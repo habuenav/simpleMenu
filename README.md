@@ -57,14 +57,20 @@ void loop() {
 }
 ```
 
-## Funciones
-SetAutoOff(uint16_t time): Configura el tiempo en segundos para que el menú se apague automáticamente.
-alignTitle y alignItem: Configura la alineación de títulos y elementos (CENTRO, IZQUIERDA).
-Root(txtMenu *menu, const char* title): Establece el menú principal y el título.
-Show(): Muestra el menú actual en la pantalla.
-Up() y Down(): Navega hacia arriba y abajo en el menú.
-Select(): Selecciona la opción actual.
-Assign(txtMenu *menu, const char* title): Asigna un submenú a una opción seleccionada.
+## Metodos
+
+**Assign(T (&opt), tipo id,  bool title=true):** asigna las opciones al menu opt:opciones , id: un identificador para el menu puede ser numerico o texto, title=true si la primera opcion es titulo
+**Root(T (&opt), tipo id,  bool title=true):** se puede establecer un menu raiz, el cual solo se define una vez
+**Show():** Muestra el menú actual en la pantalla.
+**SetAutoOff(uint8_t timeout):** metodo que establece un tiempo de apagado para la pantalla en segundos
+**Pause(bool opt):** pausa la actualizacion del menu en pantalla, util para imprimir en pantalla estando en un submenu
+**Up():** desplaza una opcion arriba en el menu
+**Down():** desplaza una opcion abajo en el menu
+**fullUp():** desplaza al primer item en el menu
+**fullDown():** desplaza al ultimo item en el menu
+**Select(uint8_t sel, tipo id):** retorna verdadero si se esta seleccionando la opcion actual del menu actual
+**Message(String _text,uint8_t align=LEFT,int wait=2000):** despliega un mensaje en pantalla, recibe una cadena de caracteres, una lineacion por defecto a la izquierda y un tiempo de espera en pantalla
+**GetInterline():** metodo que devuelve el valor de interlinea establecido
 
 ## Contribuciones
 Las contribuciones son bienvenidas. Si deseas mejorar simpleMenu, por favor envía un pull request o crea una issue para sugerir cambios.
