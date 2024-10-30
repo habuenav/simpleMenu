@@ -2,6 +2,9 @@
 simpleMenu es una biblioteca para Arduino diseñada para crear y gestionar menús de manera sencilla en proyectos que utilizan pantallas OLED y requieren navegación por múltiples opciones de configuración y control.
 Ideal para proyectos como instrumentos musicales electrónicos, robots y dispositivos DIY.
 
+## Video demo
+[![Video](https://i9.ytimg.com/vi_webp/CZT4Cc9K-DI/mq2.webp?sqp=CMD0h7kG-oaymwEmCMACELQB8quKqQMa8AEB-AG-AoAC4AOKAgwIABABGGUgXihaMA8=&rs=AOn4CLAyH8MoagsQNR8sYxJ0jhskvQ-MVQ)](https://www.youtube.com/watch?v=CZT4Cc9K-DI)
+
 # Características
 
 Fácil Integración: Diseñada para ser ligera y fácil de incorporar en cualquier proyecto.
